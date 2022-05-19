@@ -1,13 +1,13 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
+import { ref, computed, watch } from "vue";
 
-  const name = ref('');
+const name = ref("");
 
-  const chilis = ref([
-    { text: 'Aji Guyana' },
-    { text: 'Aji Pineapple' },
-    { text: 'Habanero Lemon' }
-  ]);
+const chilis = ref([
+  { text: "Aji Guyana" },
+  { text: "Aji Pineapple" },
+  { text: "Habanero Lemon" },
+]);
 </script>
 
 <template>

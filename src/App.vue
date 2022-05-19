@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import ChiliInfo from './components/ChiliInfo.vue'
+import ChiliInfo from "./components/ChiliInfo.vue";
 </script>
 
 <template>
-  <img alt="Vue logo" src="https://image.posterlounge.se/img/products/620000/612023/612023_poster_l.jpg" />
+  <img
+    alt="Vue logo"
+    src="https://image.posterlounge.se/img/products/620000/612023/612023_poster_l.jpg"
+  />
   <ChiliInfo />
 </template>
 
