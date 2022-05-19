@@ -1,3 +1,3 @@
 FROM pierrezemb/gostatic
 
-COPY ./public/ /srv/http/
+COPY ./dist/ /srv/http/
