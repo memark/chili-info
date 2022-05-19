@@ -8,6 +8,10 @@ const chilis = ref([
   { text: "Aji Pineapple" },
   { text: "Habanero Lemon" },
 ]);
+
+const filteredChilis = computed(() =>
+  chilis.value.filter((x) => x.text.includes(name.value))
+);
 </script>
 
 <template>
@@ -15,12 +19,10 @@ const chilis = ref([
 
   <input v-model="name" placeholder="Search for chili" />
 
-  <p>{{ name }}</p>
-
   <h2>Found chilis</h2>
 
   <ul>
-    <li v-for="chili in chilis" :key="chili.id">
+    <li v-for="chili in filteredChilis">
       {{ chili.text }}
     </li>
   </ul>
